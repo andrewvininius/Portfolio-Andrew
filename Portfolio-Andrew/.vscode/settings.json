@@ -1,0 +1,109 @@
+{
+  "commit-message-editor.view.defaultView": "form",
+  "commit-message-editor.dynamicTemplate": [
+    "{type}{scope}{breaking_change}: {description}"
+  ],
+  "commit-message-editor.tokens": [
+    {
+      "label": "Tipo",
+      "name": "type",
+      "type": "enum",
+      "options": [
+        {
+          "label": "🏗️ build",
+          "description": "Alterações que afetam o sistema de build ou dependências externas (ex.: package.json, angular.json, tsconfig.json)"
+        },
+        {
+          "label": "🧱 ci",
+          "description": "Mudanças em integração contínua ou deploy (GitHub Actions, GitLab CI)"
+        },
+        {
+          "label": "⚙️ chore",
+          "description": "Tarefas de manutenção sem impacto direto no comportamento do app (ex.: renomear arquivos, atualizar .gitignore)"
+        },
+        {
+          "label": "✏️ docs",
+          "description": "Alterações apenas em documentação (README, docs da API, comentários)"
+        },
+        {
+          "label": "✨ feat",
+          "description": "Adição de nova funcionalidade (ex.: novo componente, dark mode, endpoint)"
+        },
+        {
+          "label": "🐛 fix",
+          "description": "Correção de bug que impacta o comportamento do app (ex.: botão não funcionava)"
+        },
+        {
+          "label": "🚀 perf",
+          "description": "Melhoria de desempenho (ex.: lazy loading, otimização de imagens, loops pesados)"
+        },
+        {
+          "label": "♻️ refactor",
+          "description": "Refatoração de código sem alterar comportamento (ex.: reorganizar componentes, trocar var/let por const)"
+        },
+        {
+          "label": "⏪️ revert",
+          "description": "Reversão de commit anterior"
+        },
+        {
+          "label": "💄 style",
+          "description": "Alterações de estilo ou formatação sem impacto no código (espaços, indentação, ponto e vírgula)"
+        },
+        {
+          "label": "🐛 fix - 💄 style",
+          "description": "Corrção de bug + alteração de estilo (corrige um bug e ao mesmo tempo uma cor de fundo)"
+        },
+        {
+          "label": "🧪 test",
+          "description": "Adição ou correção de testes (unitários ou e2e)"
+        },
+        {
+          "label": "🌐 i18n",
+          "description": "Internacionalização ou localização (traduções, suporte a múltiplos idiomas)"
+        },
+        {
+          "label": "🎉 initial",
+          "description": "Commit inicial do projeto"
+        },
+        {
+          "label": "📈 analytics",
+          "description": "Alterações relacionadas à coleta de métricas ou monitoramento (Google Analytics, Firebase, logs)"
+        },
+        {
+          "label": "🗃️ database",
+          "description": "Alterações no banco de dados (ex.: criar/alterar tabela, adicionar índice, migração)"
+        },
+        {
+          "label": "🗑️ remove-file",
+          "description": "Remoção de arquivos, pastas ou assets do projeto (ex.: imagem, componente, CSS)"
+        },
+        {
+          "label": "🔒 security",
+          "description": "Alterações relacionadas à segurança (ex.: corrigir vulnerabilidade, atualizar pacote, auth guards, autenticação/autorização)"
+        }
+      ],
+      "description": "Tipo de alteração"
+    },
+    {
+      "label": "Descrição curta",
+      "name": "description",
+      "description": "Breve descrição do que foi feito",
+      "type": "text",
+      "multiline": false
+    },
+    {
+      "label": "Escopo",
+      "name": "scope",
+      "description": "Área do sistema afetada (ex.: auth, usuário, api, header, footer)",
+      "type": "text",
+      "prefix": "(",
+      "suffix": ")"
+    },
+    {
+      "label": "Breaking change",
+      "name": "breaking_change",
+      "type": "boolean",
+      "default": false
+    }
+  ]
+}
