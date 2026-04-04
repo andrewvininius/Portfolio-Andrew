@@ -1,0 +1,67 @@
+.container {
+  height: 100vh;
+  position: relative;
+  background:
+    radial-gradient(circle at 20% 30%, var(--color-1), transparent),
+    radial-gradient(circle at 80% 70%, var(--color-2), transparent), var(--color-10);
+  overflow: hidden;
+}
+
+.background-blur {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: var(--color-1);
+  filter: blur(150px);
+  top: -100px;
+  left: -100px;
+  opacity: 0.4;
+}
+
+/* GLASS */
+.glass {
+  background: var(--color-3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--color-4);
+  border-radius: 16px;
+}
+
+.navbar {
+  margin: 20px;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--color-5);
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.menu a {
+  color: var(--color-5);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.glass-toggle {
+  color: var(--color-5);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px;
+  border-radius: 30px;
+  background: var(--color-7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--color-8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
