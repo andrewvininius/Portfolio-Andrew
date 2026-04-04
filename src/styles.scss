@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-1);
+}
+
+:root {
+  /* --- TOKENS DE CORES --- */
+  --color-1: #FAFAFA;
+  --color-2: #5D5D5D;
+  --color-3: #B5B5B5;
+  --color-4: #FFFFFF;
+  --color-5: #e5e7eb;
+  --color-6: #0166FF;
+  --color-7: #1d4ed8;
+  --color-8: #FF6B6B;
+  --color-9: #F3F3F3;
+  --color-10: #000000;
+
+  /* --- TOKENS DE TIPOGRAFIA --- */
+  --font-main: 'Inter', sans-serif ;
+
+  /* Pesos */
+  --weight-semibold: 600;
+  --weight-regular: 400;
+
+}
+
+
