@@ -24,14 +24,35 @@ body {
   --color-8: #ffffff4d;
   --color-9: #F3F3F3;
   --color-10: #0f172a;
-  --color-10: #0000001a;
-  /* --- TOKENS DE TIPOGRAFIA --- */
-  --font-main: 'Inter', sans-serif ;
+  --color-11: #0000001a;
 
-  /* Pesos */
+  /* 🎨 BACKGROUND */
+  --bg-gradient: linear-gradient(135deg, #3b82f6, #9333ea);
+
+  /* 🧊 GLASS */
+  --glass-bg: #ffffff14;
+  --glass-border: #ffffff26;
+  --glass-hover: #ffffff33;
+
+  /* 📝 TEXTOS */
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5f5;
+  --text-dark: #0f172a;
+
+  /* 🔘 BOTÕES */
+  --btn-primary: #3b82f6;
+  --btn-primary-hover: #2563eb;
+  --btn-secondary-border: #ffffff;
+  --btn-secondary-hover: #ffffff1a;
+
+  /* 🌫 EXTRA */
+  --shadow-soft: #0000001a;
+
+  /* 🔤 TIPOGRAFIA */
+  --font-main: 'Inter', sans-serif;
   --weight-semibold: 600;
   --weight-regular: 400;
-
 }
+
 
 

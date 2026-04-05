@@ -1,48 +1,54 @@
-<section class="container">
-
-  <div class="background-blur"></div>
+<header class="header">
 
   <nav class="navbar glass">
     <h1 class="logo">Portfólio</h1>
 
     <ul class="menu">
-      <li><a href="#">Início</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Projetos</a></li>
-      <li><a href="#">Contato</a></li>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#Habilidades">Habilidades</a></li>
+      <li><a href="#Educação">Educação</a></li>
+      <li><a href="#Projetos">Projetos</a></li>
+      <li><a href="#Contato">Contato</a></li>
     </ul>
 
-    <div class="glass-toggle">
-      <div class="option active">PT</div>
-      <div class="option">EN</div>
-    </div>
+    <div class="btn-glass-toggle">
+      <input type="checkbox"  />
 
+      <label class="toggle">
+        <span>PT</span>
+        <span>EN</span>
+        <div class="slider"></div>
+      </label>
+    </div>
   </nav>
 
-  <main class="content">
+  <section class="hero">
+  <div class="glass-card">
 
-    <div class="glass card">
+    <h1 class="title">
+      Olá, eu sou <span>Andrew</span>
+    </h1>
 
-      <h2>
-      </h2>
+    <p class="subtitle">
+      Desenvolvo interfaces modernas e integradas com APIs usando Angular
+    </p>
 
-      <p>
 
-      </p>
+    <div class="buttons">
+      <a href="#projetos" class="button-primary">
+        Ver projetos
+      </a>
 
-      <div class="actions">
-
-      </div>
-
+      <a href="#contato" class="button-secondary">
+        Entrar em contato
+      </a>
     </div>
 
-    <div class="floating glass small-card">
-
-    </div>
-
-    <div class="floating glass small-card right">
-
-    </div>
-
-  </main>
+  </div>
+  <a href="#sobre" class="scroll-down">
+    <i class="bi bi-arrow-down-short"></i>
+  </a>
 </section>
+
+</header>
