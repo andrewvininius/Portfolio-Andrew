@@ -13,40 +13,37 @@ body {
 }
 
 :root {
-  /* --- TOKENS DE CORES --- */
-  --color-1: #3b82f6;
-  --color-2: #9333ea;
-  --color-3: #ffffff14;
-  --color-4: #ffffff26;
-  --color-5: #ffffff;
-  --color-6: #cbd5f5;
-  --color-7: #ffffff33;
-  --color-8: #ffffff4d;
-  --color-9: #F3F3F3;
-  --color-10: #0f172a;
-  --color-11: #0000001a;
 
   /* 🎨 BACKGROUND */
   --bg-gradient: linear-gradient(135deg, #3b82f6, #9333ea);
+  --bg-blue: #3b82f6;
+  --bg-purple: #9333ea;
+  --bg-dark: #0f172a;
+  --bg-dark-purple:#5d55b325;
 
   /* 🧊 GLASS */
   --glass-bg: #ffffff14;
-  --glass-border: #ffffff26;
+  --glass-bg-border: #ffffff26;
+  --glass-border: #ffffff4d;
   --glass-hover: #ffffff33;
+  --glass-hover-secondary:#ffffff1a;
 
   /* 📝 TEXTOS */
   --text-primary: #ffffff;
   --text-secondary: #cbd5f5;
-  --text-dark: #0f172a;
+  --text-title: #93c5fd;
+
 
   /* 🔘 BOTÕES */
-  --btn-primary: #3b82f6;
-  --btn-primary-hover: #2563eb;
+  --btn-primary: #29294f;
+  --btn-primary-hover: #29294f94;
+  --btn-secondary: #ffffff;
   --btn-secondary-border: #ffffff;
-  --btn-secondary-hover: #ffffff1a;
+  --btn-secondary-hover: #c2c2c2;
 
   /* 🌫 EXTRA */
   --shadow-soft: #0000001a;
+  --box-shadow: #00000066;
 
   /* 🔤 TIPOGRAFIA */
   --font-main: 'Inter', sans-serif;
