@@ -20,13 +20,6 @@
   box-shadow: 0 0.25rem 0.375rem var(--glass-hover);
 }
 
-// .navbar {
-//   margin: 1rem 1rem 0 1rem;
-//   padding: 1rem 2rem;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
 .navbar {
   position: fixed; /* fixa */
   top: 0;
@@ -45,6 +38,10 @@
 .logo {
   color: var(--text-primary);
   font-weight: bold;
+}
+
+.menu-toggle{
+  display: none;
 }
 
 .menu {
@@ -208,7 +205,7 @@ input:checked + .toggle .slider {
 
 .scroll-down {
   position: absolute;
-  bottom: clamp(2rem, 8vh, 6rem); /* mágica aqui */
+  bottom: clamp(3rem, 10vh, 7rem); /* mágica aqui */
 
   left: 50%;
   transform: translateX(-50%);
@@ -266,8 +263,14 @@ input:checked + .toggle .slider {
   }
 }
 @media (max-width: 600px) {
+  .menu-toggle{
+    display: flex;
+  }
   .menu {
     display: none; /* esconder menu */
+  }
+  .toggle{
+    display: none;
   }
 
   .navbar {
