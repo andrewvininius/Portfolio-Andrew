@@ -1,29 +1,22 @@
+
 <header class="header">
 
   <nav class="navbar glass">
     <h1 class="logo">Portfólio</h1>
-    <!-- Menu-mobile -->
-    <div class="menu-toggle">
-      <ul class="menu-hamburgue">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#Habilidades">Habilidades</a></li>
-        <li><a href="#Educação">Educação</a></li>
-        <li><a href="#Projetos">Projetos</a></li>
-        <li><a href="#Contato">Contato</a></li>
-      </ul>
 
-      <div class="btn-glass-toggle">
-        <input type="checkbox" />
+    <!-- BOTÃO HAMBURGUER -->
+    <button
+      class="menu-btn"
+      [class.active]="isOpen()"
+      (click)="toggleMenu()"
+      aria-label="Abrir menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-        <label class="mobile-toggle">
-          <span>PT</span>
-          <span>EN</span>
-          <div class="slider"></div>
-        </label>
-      </div>
-    </div>
-    <!-- Menu-desktop -->
+    <!-- MENU DESKTOP -->
     <ul class="menu">
       <li><a href="#inicio">Início</a></li>
       <li><a href="#sobre">Sobre</a></li>
@@ -33,9 +26,9 @@
       <li><a href="#Contato">Contato</a></li>
     </ul>
 
-    <div class="btn-glass-toggle">
+    <!-- TOGGLE DESKTOP -->
+   <div class="btn-glass-toggle desktop-toggle">
       <input type="checkbox" />
-
       <label class="toggle">
         <span>PT</span>
         <span>EN</span>
@@ -43,6 +36,39 @@
       </label>
     </div>
   </nav>
+
+  <!-- BACKDROP -->
+  <div
+    class="backdrop"
+    [class.active]="isOpen()"
+    (click)="closeMenu()"
+  ></div>
+
+  <!-- MENU LATERAL -->
+  <aside class="drawer" [class.active]="isOpen()">
+
+    <button class="close-btn" (click)="closeMenu()">✕</button>
+
+    <ul>
+      <li><a (click)="closeMenu()" href="#inicio">Início</a></li>
+      <li><a (click)="closeMenu()" href="#sobre">Sobre</a></li>
+      <li><a (click)="closeMenu()" href="#Habilidades">Habilidades</a></li>
+      <li><a (click)="closeMenu()" href="#Educação">Educação</a></li>
+      <li><a (click)="closeMenu()" href="#Projetos">Projetos</a></li>
+      <li><a (click)="closeMenu()" href="#Contato">Contato</a></li>
+    </ul>
+
+    <!-- TOGGLE MOBILE -->
+    <div class="btn-glass-toggle mobile-toggle">
+      <input type="checkbox" />
+      <label class="toggle">
+        <span>PT</span>
+        <span>EN</span>
+        <div class="slider"></div>
+      </label>
+    </div>
+
+  </aside>
 
   <section class="hero">
     <div class="glass-card">
@@ -55,7 +81,6 @@
         Desenvolvo interfaces modernas e integradas com APIs usando Angular
       </p>
 
-
       <div class="buttons">
         <a href="#projetos" class="button-primary">
           Ver projetos
@@ -67,6 +92,7 @@
       </div>
 
     </div>
+
     <a href="#sobre" class="scroll-down">
       <i class="bi bi-arrow-down-short"></i>
     </a>
